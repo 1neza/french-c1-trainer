@@ -226,3 +226,5 @@ button{font-family:inherit;cursor:pointer}
 .field-inline em{font-size:.75rem;color:var(--ink-soft);font-style:normal}
 .t-danger{color:var(--red);font-weight:600}
 #q-timer{font-family:var(--font-mono)}
+.subq{border-top:1px dashed var(--line);padding-top:1rem;margin-top:1rem}
+.subq:first-of-type{border-top:none;padding-top:0;margin-top:0}
