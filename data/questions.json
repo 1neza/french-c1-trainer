@@ -2,7 +2,7 @@
   "comprehension": [
     {
       "id": "c01",
-      "audio": "audio/audio_1.weba",
+      "audio": "audio/audio_1.mp3",
       "transcript": "Fahim (Performindex) appelle Stock'inbox pour parler à Mme Branchu. La standardiste multiplie les obstacles : sujet vague, prénom erroné (Catherine puis Monique), agenda saturé, refus de donner un mail direct (seulement contact@ et admin@). Fahim rappelle : on lui dit que Mme Branchu répondra au mail. Il rappelle encore : Mme Branchu a lu l'offre et n'est pas intéressée. À la fin, la standardiste révèle qu'elle est en réalité Mme Branchu elle-même.",
       "questions": [
         {
@@ -69,7 +69,7 @@
     },
     {
       "id": "c02",
-      "audio": "audio/audio_2.weba",
+      "audio": "audio/audio_2.mp3",
       "transcript": "Éric Souplin, commercial d'Aquaforé (fontaines à eau), contacte l'agence RVB. Sandrine le transfère à Karema Wardich, assistante de M. Tornet. Karema explique qu'ils utilisent des bouteilles individuelles et souhaite limiter les commandes car les gens gaspillent. Éric propose un tableau comparatif chiffré sur base de 25 collaborateurs, annonçant 20 à 30 % d'économies, et une démonstration. Karema demande d'abord la proposition chiffrée par courrier. Rendez-vous fixé mardi 14 avril à 17 h au 22 boulevard Beaumarché.",
       "questions": [
         {
@@ -131,7 +131,7 @@
     },
     {
       "id": "c03",
-      "audio": "audio/audio_3.weba",
+      "audio": "audio/audio_3.mp3",
       "transcript": "M. Sylvain Dubois appelle sa banque pour connaître le solde. Magali lui demande deux chiffres du code secret ; les combinaisons données ne correspondent pas. Le client s'énerve, tient des propos racistes, tutoie et insulte la conseillère (« pauvre conne »). Magali refuse de raccrocher mais propose une authentification alternative par questions, ne donnant accès qu'à une partie du compte. Le client menace d'écrire au siège ; Magali reste professionnelle, l'invite à changer de banque puis raccroche poliment.",
       "questions": [
         {
@@ -198,7 +198,7 @@
     },
     {
       "id": "c04",
-      "audio": "audio/audio_4.weba",
+      "audio": "audio/audio_4.mp3",
       "transcript": "M. Tornet (Librairie du Forum à Bourges) appelle furieux : la livraison de cette semaine est incorrecte. Amandine identifie qu'il a reçu par erreur la commande précédente (B5566), celle-là même qu'il avait refusée la semaine passée, accompagnée d'échantillons offerts en compensation. La vraie commande B5567 (quatre collections Arc-en-ciel 48) arrivera en fin de semaine, mais le client final s'est déplacé aujourd'hui. Amandine propose, à titre exceptionnel, de livrer directement chez le client final si M. Tornet envoie le détail par fax.",
       "questions": [
         {
@@ -260,7 +260,7 @@
     },
     {
       "id": "c05",
-      "audio": "audio/audio_5.weba",
+      "audio": "audio/audio_5.mp3",
       "transcript": "Olivier Jacob (recommandé par M. Socret) rappelle M. Canot chez Ubisoft pour fixer un rendez-vous. M. Canot a reçu la plaquette, la trouve intéressante mais indique qu'il a déjà des fournisseurs dans le secteur et doute de l'utilité d'une rencontre. Olivier reformule cet argument comme une raison de se voir. Il propose mardi 17 h ou jeudi 10 h ; M. Canot préfère entre midi et deux. Rendez-vous fixé mardi midi au 81 rue Jacantil, Levallois.",
       "questions": [
         {
@@ -324,31 +324,31 @@
   "oral": [
     {
       "id": "o01",
-      "audio": "audio/audio_1.weba",
+      "audio": "audio/audio_1.mp3",
       "transcript": "Situation : un démarcheur téléphonique (Fahim, Performindex) insiste lourdement pour parler à Mme Branchu malgré tous les filtres. Vous êtes conseiller Amazon Business et un vendeur tiers appelle de la même manière pour joindre un acheteur professionnel sans sujet précis ni rendez-vous.",
       "instruction": "Répondez oralement (max 60 s) au vendeur : cadrez fermement mais courtoisement le canal de contact (formulaire pro / messagerie Seller Central), refusez le transfert direct, expliquez pourquoi et proposez la marche à suivre."
     },
     {
       "id": "o02",
-      "audio": "audio/audio_2.weba",
+      "audio": "audio/audio_2.mp3",
       "transcript": "Situation : un commercial obtient un rendez-vous en démontrant des économies chiffrées (20–30 %). Transposition : un vendeur tiers vous appelle, il envisage de passer au programme Amazon FBA mais hésite sur le coût comparé à sa logistique actuelle.",
       "instruction": "Répondez oralement (max 60 s) en conseiller Amazon : reformulez son besoin, annoncez un comparatif chiffré personnalisé, indiquez les données nécessaires (volumes, poids moyen, taux de retour) et proposez un rendez-vous de suivi."
     },
     {
       "id": "o03",
-      "audio": "audio/audio_3.weba",
+      "audio": "audio/audio_3.mp3",
       "transcript": "Situation : un client agressif, tutoiement, insultes, propos discriminatoires. Il refuse l'authentification et exige des informations sensibles. Transposition Amazon : le même profil réclame l'accès à sa commande sans vérification.",
       "instruction": "Répondez oralement (max 60 s) : posez un cadre professionnel ferme, rappelez que les propos injurieux ne sont pas tolérés, expliquez pourquoi l'authentification est non négociable, proposez une authentification allégée limitée."
     },
     {
       "id": "o04",
-      "audio": "audio/audio_4.weba",
+      "audio": "audio/audio_4.mp3",
       "transcript": "Situation : erreur logistique — le client a reçu une ancienne commande, son propre client final s'est déplacé pour rien. Transposition : un vendeur tiers Amazon vous appelle, un colis important pour son client final a été mal expédié par la logistique Amazon.",
       "instruction": "Répondez oralement (max 60 s) : excusez-vous concrètement, résumez ce que vous avez compris pour vérification, proposez une livraison express directe au client final avec délai."
     },
     {
       "id": "o05",
-      "audio": "audio/audio_5.weba",
+      "audio": "audio/audio_5.mp3",
       "transcript": "Situation : un commercial obtient un rendez-vous en retournant l'objection « nous avons déjà des fournisseurs ». Transposition : vous êtes conseiller Amazon Ads. Un vendeur tiers vous dit qu'il utilise déjà Google Ads et ne voit pas l'intérêt d'Amazon Ads.",
       "instruction": "Répondez oralement (max 60 s) : retournez l'objection en atout (audience acheteuse), proposez un audit rapide et un créneau précis."
     }
