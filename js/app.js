@@ -6,7 +6,7 @@
 
 /* ---------------- config & state ---------------- */
 
-const COUNTS = { comprehension: 5, oral: 4, writing: 4 };
+const COUNTS = { comprehension: 2, oral: 4, writing: 4 };
 const WRITE_MAX_WORDS = 100;
 
 // user-adjustable timers (seconds); 0 = no limit
@@ -239,7 +239,7 @@ function renderIntro() {
   $app.innerHTML = ticket("Session d'entraînement", "Épreuve C1 — Conseiller Service Client", "≈ 25 min", `
     <p>Vous incarnez un conseiller Amazon face à des clients et vendeurs (compte, commandes, livraisons, remboursements, marketplace). Trois épreuves tirées aléatoirement :</p>
     <div class="intro-grid">
-      <div class="intro-item"><span class="roman">I</span><p><strong>Compréhension</strong> — ${COUNTS.comprehension} QCM sur des courriels/messages, chronométrés.</p></div>
+      <div class="intro-item"><span class="roman">I</span><p><strong>Compréhension</strong> — ${COUNTS.comprehension} conversations audio, plusieurs questions chacune, chronométrées.</p></div>
       <div class="intro-item"><span class="roman">II</span><p><strong>Expression orale</strong> — ${COUNTS.oral} situations. Réponse enregistrée et évaluée par IA.</p></div>
       <div class="intro-item"><span class="roman">III</span><p><strong>Expression écrite</strong> — ${COUNTS.writing} courriels. <strong>${WRITE_MAX_WORDS} mots max</strong>, temps limité, correction IA.</p></div>
     </div>
@@ -277,39 +277,66 @@ function startSession() {
 
 /* ---------------- render: comprehension ---------------- */
 
+// Normalize: convert legacy single-question item to array shape
+function subQs(item) {
+  return item.questions || [{ question: item.question, options: item.options, correct: item.correct }];
+}
+
 function renderComprehension() {
   setProgress();
   const i = phase.index;
-  const q = session.comprehension[i];
-  const audioHTML = q.audio ? audioBlock(q) : "";
-  $app.innerHTML = ticket("Épreuve I · Compréhension", `Question ${i + 1} / ${session.comprehension.length}`,
+  const item = session.comprehension[i];
+  const subs = subQs(item);
+  // ensure answer slot is an array of nulls sized to subs
+  if (!Array.isArray(answers.comprehension[i]) || answers.comprehension[i].length !== subs.length) {
+    answers.comprehension[i] = Array(subs.length).fill(null);
+  }
+  const audioHTML = item.audio ? audioBlock(item) : "";
+  const contextHTML = item.context && !item.audio ? `<div class="mail">${esc(item.context)}</div>` : "";
+  const subsHTML = subs.map((sq, si) => `
+    <div class="subq" data-si="${si}">
+      <p class="q-instruction">${si + 1}. ${esc(sq.question)}</p>
+      <div class="options">
+        ${sq.options.map((opt, oi) => `
+          <button type="button" class="option" data-oi="${oi}">
+            <span class="opt-letter">${"ABCD"[oi]}</span><span>${esc(opt)}</span>
+          </button>`).join("")}
+      </div>
+    </div>`).join("");
+
+  $app.innerHTML = ticket("Épreuve I · Compréhension",
+    `Conversation ${i + 1} / ${session.comprehension.length} · ${subs.length} questions`,
     `⏱ <span id="q-timer"></span>`, `
     ${audioHTML}
-    ${q.context && !q.audio ? `<div class="mail">${esc(q.context)}</div>` : ""}
-    <p class="q-instruction">${esc(q.question)}</p>
-    <div class="options" id="options"></div>
+    ${contextHTML}
+    ${subsHTML}
     <div class="actions"><button id="btn-next" class="btn-primary" disabled>Valider et continuer</button></div>
   `);
-  const $opts = document.getElementById("options");
-  q.options.forEach((opt, oi) => {
-    const b = document.createElement("button");
-    b.className = "option";
-    b.innerHTML = `<span class="opt-letter">${"ABCD"[oi]}</span><span>${esc(opt)}</span>`;
-    b.onclick = () => {
-      answers.comprehension[i] = oi;
-      [...$opts.children].forEach(c => c.classList.remove("selected"));
-      b.classList.add("selected");
-      document.getElementById("btn-next").disabled = false;
-    };
-    $opts.appendChild(b);
+
+  const $next = document.getElementById("btn-next");
+  const checkComplete = () => {
+    $next.disabled = answers.comprehension[i].some(v => v === null);
+  };
+  $app.querySelectorAll(".subq").forEach($sq => {
+    const si = Number($sq.dataset.si);
+    $sq.querySelectorAll(".option").forEach($btn => {
+      $btn.onclick = () => {
+        const oi = Number($btn.dataset.oi);
+        answers.comprehension[i][si] = oi;
+        $sq.querySelectorAll(".option").forEach(c => c.classList.remove("selected"));
+        $btn.classList.add("selected");
+        checkComplete();
+      };
+    });
   });
+
   const next = () => {
     clearQTimer();
     if (i + 1 < session.comprehension.length) { phase.index++; renderComprehension(); }
     else { phase = { section: "oral", index: 0 }; renderOral(); }
   };
-  document.getElementById("btn-next").onclick = next;
-  startQTimer(timers.mcq, next); // expiry locks current selection (or none) and advances
+  $next.onclick = next;
+  startQTimer(timers.mcq, next);
 }
 
 /* ---------------- audio block helper ---------------- */
@@ -473,11 +500,23 @@ async function runGrading() {
   const $msg = document.getElementById("grading-msg");
   const results = { comp: [], oral: [], writing: [], level: null };
 
-  results.comp = session.comprehension.map((q, i) => ({
-    ok: answers.comprehension[i] === q.correct,
-    chosen: answers.comprehension[i],
-    q,
-  }));
+  results.comp = session.comprehension.map((item, i) => {
+    const subs = subQs(item);
+    const chosen = answers.comprehension[i] || [];
+    const details = subs.map((sq, si) => ({
+      question: sq.question,
+      options: sq.options,
+      correct: sq.correct,
+      chosen: chosen[si],
+      ok: chosen[si] === sq.correct,
+    }));
+    return {
+      item,
+      details,
+      correctCount: details.filter(d => d.ok).length,
+      total: details.length,
+    };
+  });
 
   try {
     for (let i = 0; i < session.oral.length; i++) {
@@ -489,9 +528,10 @@ async function runGrading() {
     const items = session.writing.map((q, i) => ({ context: q.context, instruction: q.instruction, answer: answers.writing[i] }));
     results.writing = await gradeWriting(items);
     $msg.textContent = "Estimation du niveau CECRL…";
-    const compScore = results.comp.filter(r => r.ok).length;
+    const compCorrect = results.comp.reduce((s, r) => s + r.correctCount, 0);
+    const compTotal = results.comp.reduce((s, r) => s + r.total, 0);
     const summary =
-      `Compréhension: ${compScore}/${results.comp.length} bonnes réponses.\n` +
+      `Compréhension: ${compCorrect}/${compTotal} bonnes réponses.\n` +
       `Oral (sur 10 chacun): ${results.oral.map(r => r.score).join(", ")}.\n` +
       `Écrit (sur 10 chacun): ${results.writing.map(r => r.score).join(", ")}.\n` +
       `Extraits de feedback oral: ${results.oral.map(r => r.feedback).join(" | ")}\n` +
@@ -509,13 +549,17 @@ async function runGrading() {
 function renderResults(r) {
   phase = { section: "results", index: 0 };
   setProgress();
-  const compScore = r.comp.filter(x => x.ok).length;
+  const compCorrect = r.comp.reduce((s, x) => s + x.correctCount, 0);
+  const compTotal = r.comp.reduce((s, x) => s + x.total, 0);
   const avg = (arr) => arr.length ? (arr.reduce((s, x) => s + (Number(x.score) || 0), 0) / arr.length).toFixed(1) : "—";
 
   const compHTML = r.comp.map((x, i) => `
     <div class="feedback-item">
-      <h3>Question ${i + 1} — ${x.ok ? "✔ correcte" : "✘ incorrecte"}</h3>
-      <div class="fb-text">${esc(x.q.question)}\nVotre réponse : ${x.chosen != null ? esc(x.q.options[x.chosen]) : "(aucune — temps écoulé)"}${x.ok ? "" : `\nBonne réponse : ${esc(x.q.options[x.q.correct])}`}</div>
+      <h3>Conversation ${i + 1} — ${x.correctCount}/${x.total}</h3>
+      ${x.details.map((d, di) => `
+        <div class="fb-text">${di + 1}. ${d.ok ? "✔" : "✘"} ${esc(d.question)}
+Votre réponse : ${d.chosen != null ? esc(d.options[d.chosen]) : "(aucune)"}${d.ok ? "" : `
+Bonne réponse : ${esc(d.options[d.correct])}`}</div>`).join("")}
     </div>`).join("");
 
   const oralHTML = r.oral.map((x, i) => `
@@ -537,7 +581,7 @@ function renderResults(r) {
       <p>${esc(r.level?.comment || "")}</p>
     </div>
     <div class="score-strip">
-      <div class="score-cell"><div class="big">${compScore}/${r.comp.length}</div><div class="lbl">Compréhension</div></div>
+      <div class="score-cell"><div class="big">${compCorrect}/${compTotal}</div><div class="lbl">Compréhension</div></div>
       <div class="score-cell"><div class="big">${avg(r.oral)}/10</div><div class="lbl">Oral (moyenne)</div></div>
       <div class="score-cell"><div class="big">${avg(r.writing)}/10</div><div class="lbl">Écrit (moyenne)</div></div>
     </div>
