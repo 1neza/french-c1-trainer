@@ -3,132 +3,354 @@
     {
       "id": "c01",
       "audio": "audio/audio_1.weba",
-      "transcript": "Fahim (Performindex) appelle Stock'inbox pour parler à Mme Branchu. La standardiste multiplie les obstacles : sujet vague, prénom erroné, agenda saturé, refus de donner un mail direct. Fahim rappelle : on lui dit que Mme Branchu répondra au mail. Il rappelle encore : Mme Branchu a lu l'offre et n'est pas intéressée. À la fin, la standardiste révèle qu'elle est en réalité Mme Branchu elle-même.",
-      "question": "Quelle est la stratégie de Mme Branchu face au démarcheur ?",
-      "options": [
-        "Elle accepte un rendez-vous en fin de journée.",
-        "Elle se fait passer pour son assistante afin de filtrer et décourager l'appel.",
-        "Elle transfère l'appel à un collègue du service achats.",
-        "Elle demande une proposition écrite pour l'étudier sérieusement."
-      ],
-      "correct": 1
+      "transcript": "Fahim (Performindex) appelle Stock'inbox pour parler à Mme Branchu. La standardiste multiplie les obstacles : sujet vague, prénom erroné (Catherine puis Monique), agenda saturé, refus de donner un mail direct (seulement contact@ et admin@). Fahim rappelle : on lui dit que Mme Branchu répondra au mail. Il rappelle encore : Mme Branchu a lu l'offre et n'est pas intéressée. À la fin, la standardiste révèle qu'elle est en réalité Mme Branchu elle-même.",
+      "questions": [
+        {
+          "question": "Qui appelle qui, et pour quel motif initial ?",
+          "options": [
+            "Mme Branchu appelle Performindex pour un devis.",
+            "Fahim (Performindex) appelle Stock'inbox pour présenter une offre à Mme Branchu.",
+            "Un client appelle Stock'inbox pour une réclamation.",
+            "Fahim rappelle un ancien client de Performindex."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Pourquoi la standardiste refuse-t-elle de donner le prénom exact de Mme Branchu ?",
+          "options": [
+            "Elle ne le connaît pas.",
+            "Pour tester si l'appelant connaît réellement Mme Branchu.",
+            "Par confidentialité imposée par la direction.",
+            "Parce qu'elle a été distraite."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quelles adresses e-mail sont proposées à Fahim ?",
+          "options": [
+            "Uniquement l'adresse directe de Mme Branchu.",
+            "contact@ et admin@ uniquement.",
+            "Une adresse RH et une adresse commerciale.",
+            "Aucune, tout passe par courrier postal."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Au deuxième appel, quelle réponse Fahim obtient-il ?",
+          "options": [
+            "Mme Branchu est en ligne, il est mis en attente.",
+            "Elle a lu le mail, elle va rappeler quand elle sera disponible.",
+            "Elle a refusé de lire le mail.",
+            "Elle demande une lettre au siège avant tout contact."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quelle est la révélation finale ?",
+          "options": [
+            "Mme Branchu est en réalité en vacances.",
+            "L'entreprise n'existe plus.",
+            "La standardiste est en fait Mme Branchu elle-même.",
+            "Fahim s'est trompé de numéro depuis le début."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Quel registre langagier caractérise l'échange ?",
+          "options": [
+            "Familier et amical des deux côtés.",
+            "Ironique et évasif côté standardiste, insistant et professionnel côté appelant.",
+            "Agressif et injurieux.",
+            "Technique et administratif."
+          ],
+          "correct": 1
+        }
+      ]
     },
     {
       "id": "c02",
       "audio": "audio/audio_2.weba",
-      "transcript": "Éric Souplin, commercial d'Aquaforé (fontaines à eau), contacte l'agence RVB. Sandrine le transfère à Karema Wardich, assistante de M. Tornet. Karema explique qu'ils utilisent des bouteilles individuelles, qu'elle voudrait limiter les commandes car les gens gaspillent. Éric propose un tableau comparatif chiffré sur base de 25 collaborateurs, annonçant 20 à 30 % d'économies, et une démonstration. Karema demande d'abord la proposition chiffrée par courrier ; ils fixent un rendez-vous mardi 14 avril à 17 h au 22 boulevard Beaumarché.",
-      "question": "Quel est l'accord final obtenu par le commercial ?",
-      "options": [
-        "Une commande immédiate de fontaines à eau.",
-        "Un refus définitif de la part de l'assistante.",
-        "L'envoi d'une proposition chiffrée puis un rendez-vous de principe le 14 avril à 17 h.",
-        "Une démonstration sans engagement dès le lendemain matin."
-      ],
-      "correct": 2
+      "transcript": "Éric Souplin, commercial d'Aquaforé (fontaines à eau), contacte l'agence RVB. Sandrine le transfère à Karema Wardich, assistante de M. Tornet. Karema explique qu'ils utilisent des bouteilles individuelles et souhaite limiter les commandes car les gens gaspillent. Éric propose un tableau comparatif chiffré sur base de 25 collaborateurs, annonçant 20 à 30 % d'économies, et une démonstration. Karema demande d'abord la proposition chiffrée par courrier. Rendez-vous fixé mardi 14 avril à 17 h au 22 boulevard Beaumarché.",
+      "questions": [
+        {
+          "question": "Quel produit propose Aquaforé ?",
+          "options": [
+            "Des bouteilles d'eau individuelles en gros.",
+            "Des fontaines à eau en libre-service.",
+            "Un service de livraison à domicile.",
+            "Des filtres à installer sur les robinets."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quelle est la première objection de Karema au sujet du système actuel ?",
+          "options": [
+            "Les bouteilles sont trop chères à l'unité.",
+            "Le personnel gaspille — bouteilles à moitié pleines à la poubelle.",
+            "Le fournisseur actuel livre en retard.",
+            "L'eau a mauvais goût."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Combien de collaborateurs travaillent à l'agence ?",
+          "options": ["15", "20", "25", "30"],
+          "correct": 2
+        },
+        {
+          "question": "Quel argument chiffré Éric avance-t-il ?",
+          "options": [
+            "Une économie de 5 à 10 %.",
+            "Une économie de 20 à 30 %.",
+            "Une gratuité les six premiers mois.",
+            "Un retour sur investissement en un an."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quelle est la condition posée par Karema avant tout rendez-vous ferme ?",
+          "options": [
+            "Recevoir d'abord la proposition chiffrée par courrier.",
+            "Consulter M. Tornet en direct.",
+            "Obtenir une démonstration immédiate.",
+            "Vérifier les références d'Aquaforé."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Où et quand le rendez-vous est-il fixé ?",
+          "options": [
+            "Lundi 13 avril, chez Aquaforé.",
+            "Mardi 14 avril à 11 h, siège d'Aquaforé.",
+            "Mardi 14 avril à 17 h, 22 boulevard Beaumarché.",
+            "Mercredi 15 avril, en visioconférence."
+          ],
+          "correct": 2
+        }
+      ]
     },
     {
       "id": "c03",
-      "audio": "audio/audio_3.mp4",
-      "transcript": "M. Sylvain Dubois appelle sa banque pour connaître le solde. Magali lui demande les chiffres de son code secret ; les combinaisons données ne correspondent pas. Le client s'énerve, tient des propos racistes et injurieux, tutoie et insulte la conseillère (« pauvre conne »). Magali refuse de raccrocher mais propose une authentification alternative par questions, ne donnant accès qu'à une partie du compte. Le client menace d'écrire au siège ; Magali reste professionnelle et lui suggère de changer de banque avant de raccrocher poliment.",
-      "question": "Comment la conseillère gère-t-elle l'agressivité du client ?",
-      "options": [
-        "Elle raccroche immédiatement après la première insulte.",
-        "Elle cède et lui communique le solde sans authentification.",
-        "Elle reste professionnelle, propose une authentification de secours et signale que l'appel est enregistré.",
-        "Elle transfère l'appel à son manager dès le début de la conversation."
-      ],
-      "correct": 2
+      "audio": "audio/audio_3.weba",
+      "transcript": "M. Sylvain Dubois appelle sa banque pour connaître le solde. Magali lui demande deux chiffres du code secret ; les combinaisons données ne correspondent pas. Le client s'énerve, tient des propos racistes, tutoie et insulte la conseillère (« pauvre conne »). Magali refuse de raccrocher mais propose une authentification alternative par questions, ne donnant accès qu'à une partie du compte. Le client menace d'écrire au siège ; Magali reste professionnelle, l'invite à changer de banque puis raccroche poliment.",
+      "questions": [
+        {
+          "question": "Quelle est la demande initiale du client ?",
+          "options": [
+            "Faire un virement.",
+            "Connaître le solde de son compte.",
+            "Bloquer sa carte bancaire.",
+            "Prendre rendez-vous avec un conseiller."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Pourquoi l'authentification par code échoue-t-elle ?",
+          "options": [
+            "Le système bancaire est en panne.",
+            "Les chiffres donnés par le client ne correspondent pas à son code.",
+            "La conseillère saisit mal les chiffres.",
+            "Le compte a été piraté."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quels comportements le client adopte-t-il face à Magali ?",
+          "options": [
+            "Il reste calme mais insistant.",
+            "Tutoiement, insultes et propos racistes.",
+            "Il menace de porter plainte pénalement dès le début.",
+            "Il coopère puis raccroche."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Que propose Magali pour contourner l'échec du code ?",
+          "options": [
+            "Bloquer le compte pour sécurité.",
+            "Envoyer un nouveau code par courrier.",
+            "Une authentification par questions, avec accès partiel aux informations.",
+            "Un rendez-vous en agence dans la journée."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Comment Magali réagit-elle aux insultes ?",
+          "options": [
+            "Elle raccroche immédiatement.",
+            "Elle répond sur le même ton.",
+            "Elle reste professionnelle et rappelle que les propos sont incorrects.",
+            "Elle cède à la demande du client sans vérification."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Comment se termine l'appel ?",
+          "options": [
+            "Le client obtient son solde après excuses.",
+            "Magali transfère l'appel au manager.",
+            "Magali suggère au client de changer de banque puis lui souhaite une bonne soirée.",
+            "L'appel est coupé par le système."
+          ],
+          "correct": 2
+        }
+      ]
     },
     {
       "id": "c04",
-      "audio": "audio/audio_4.mp4",
+      "audio": "audio/audio_4.weba",
       "transcript": "M. Tornet (Librairie du Forum à Bourges) appelle furieux : la livraison de cette semaine est incorrecte. Amandine identifie qu'il a reçu par erreur la commande précédente (B5566), celle-là même qu'il avait refusée la semaine passée, accompagnée d'échantillons offerts en compensation. La vraie commande B5567 (quatre collections Arc-en-ciel 48) arrivera en fin de semaine, mais le client final s'est déplacé aujourd'hui. Amandine propose, à titre exceptionnel, de livrer directement chez le client final si M. Tornet envoie le détail par fax.",
-      "question": "Quelle solution exceptionnelle Amandine propose-t-elle ?",
-      "options": [
-        "Rembourser intégralement la commande B5567.",
-        "Livrer directement le client final de M. Tornet, sur envoi du détail par fax.",
-        "Renvoyer immédiatement la bonne commande par transporteur express.",
-        "Annuler la commande et offrir une remise sur la prochaine."
-      ],
-      "correct": 1
+      "questions": [
+        {
+          "question": "Quel est le problème signalé par M. Tornet ?",
+          "options": [
+            "Un article manquant dans la livraison.",
+            "Une livraison en retard.",
+            "Une livraison qui ne correspond pas à sa commande.",
+            "Une facturation erronée."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Quel numéro correspond à la commande réellement attendue ?",
+          "options": ["B5566", "B5567", "B5568", "B5657"],
+          "correct": 1
+        },
+        {
+          "question": "D'où provient le colis reçu par erreur ?",
+          "options": [
+            "D'un autre client qui l'a refusé.",
+            "De la commande précédente que M. Tornet lui-même avait refusée.",
+            "D'une erreur du transporteur.",
+            "D'un stock d'invendus."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Que contiennent en plus les cartons reçus ?",
+          "options": [
+            "Des factures d'anciens clients.",
+            "Des échantillons offerts en compensation du désagrément précédent.",
+            "Des produits d'un autre fournisseur.",
+            "Rien de spécial."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Pourquoi la situation est-elle urgente pour M. Tornet ?",
+          "options": [
+            "Il part en vacances demain.",
+            "Son propre client final s'est déplacé exprès aujourd'hui.",
+            "Sa librairie ferme définitivement.",
+            "Il doit rendre les invendus."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quelle solution exceptionnelle Amandine propose-t-elle ?",
+          "options": [
+            "Rembourser intégralement la commande.",
+            "Livrer directement le client final, sur envoi du détail par fax.",
+            "Un renvoi express le lendemain matin.",
+            "Une remise de 30 % sur la prochaine commande."
+          ],
+          "correct": 1
+        }
+      ]
     },
     {
       "id": "c05",
       "audio": "audio/audio_5.weba",
-      "transcript": "Olivier Jacob (recommandé par M. Socret) rappelle M. Canot chez Ubisoft pour fixer un rendez-vous. M. Canot a reçu la plaquette, la trouve intéressante mais indique qu'il a déjà des fournisseurs dans le secteur et doute de l'utilité d'une rencontre. Olivier reformule justement cet argument comme une raison de se voir. Il propose mardi 17 h ou jeudi 10 h ; M. Canot préfère entre midi et deux. Rendez-vous fixé mardi midi au 81 rue Jacantil, Levallois.",
-      "question": "Comment le commercial obtient-il le rendez-vous malgré la réticence initiale ?",
-      "options": [
-        "Il propose une réduction commerciale attractive.",
-        "Il retourne l'objection (« déjà des fournisseurs ») comme raison même de se rencontrer et propose plusieurs créneaux.",
-        "Il insiste en menaçant de rappeler tous les jours.",
-        "Il demande à parler directement à M. Socret."
-      ],
-      "correct": 1
-    },
-    {
-      "id": "c06",
-      "type": "text",
-      "context": "Objet : Prélèvement Prime non autorisé\n\nBonjour,\n\nJe constate un prélèvement de 6,99 € intitulé « Amazon Prime » sur mon relevé bancaire, alors que je n'ai jamais souscrit volontairement à cet abonnement. Je suppose avoir activé un essai gratuit par inadvertance lors d'une commande le mois dernier. Je souhaite l'annulation immédiate de l'abonnement ainsi que le remboursement du montant prélevé, faute de quoi je ferai opposition auprès de ma banque.\n\nCordialement,\nM. Da Silva",
-      "question": "Que demande précisément le client ?",
-      "options": [
-        "La résiliation de Prime et le remboursement du prélèvement, sous peine d'opposition bancaire.",
-        "Une réduction sur son abonnement Prime annuel.",
-        "Des explications sur les avantages de Prime avant de décider.",
-        "Le remboursement de sa dernière commande."
-      ],
-      "correct": 0
-    },
-    {
-      "id": "c07",
-      "type": "text",
-      "context": "Objet : Article reçu endommagé — vendeur tiers\n\nBonjour,\n\nJ'ai reçu hier une cafetière commandée auprès d'un vendeur tiers sur votre plateforme. Le carton était intact, mais l'appareil présente une fissure sur le réservoir et fuit dès la première utilisation. J'ai contacté le vendeur il y a cinq jours via la messagerie, sans aucune réponse. Le délai de réponse de 48 h étant largement dépassé, je souhaite faire jouer la Garantie A à Z pour obtenir un remboursement intégral.\n\nMerci de votre diligence,\nMme Bernard",
-      "question": "Pourquoi la cliente s'adresse-t-elle directement à Amazon plutôt qu'au vendeur ?",
-      "options": [
-        "Parce que le vendeur a refusé explicitement le remboursement.",
-        "Parce que le vendeur n'a pas répondu dans le délai imparti, ce qui ouvre droit à la Garantie A à Z.",
-        "Parce que le colis est arrivé ouvert et incomplet.",
-        "Parce qu'elle ne sait pas comment contacter le vendeur."
-      ],
-      "correct": 1
-    },
-    {
-      "id": "c08",
-      "type": "text",
-      "context": "Objet : Débit après annulation de commande\n\nBonjour,\n\nJ'ai annulé ma commande n° 171-8890 trois minutes après l'avoir passée, et j'ai bien reçu l'e-mail de confirmation d'annulation. Pourtant, ma banque m'indique un débit de 249 €. Votre site parle d'une simple « autorisation temporaire », mais quinze jours se sont écoulés et la somme n'est toujours pas restituée. Je commence à perdre patience : à qui dois-je m'adresser, à vous ou à ma banque ?\n\nM. Cohen",
-      "question": "Quel malentendu faut-il clarifier pour ce client ?",
-      "options": [
-        "Sa commande n'a en réalité jamais été annulée.",
-        "La différence entre une autorisation bancaire temporaire et un débit réel, et le délai de libération des fonds.",
-        "Le montant débité ne correspond pas à sa commande.",
-        "Il a été victime d'une fraude à la carte bancaire."
-      ],
-      "correct": 1
+      "transcript": "Olivier Jacob (recommandé par M. Socret) rappelle M. Canot chez Ubisoft pour fixer un rendez-vous. M. Canot a reçu la plaquette, la trouve intéressante mais indique qu'il a déjà des fournisseurs dans le secteur et doute de l'utilité d'une rencontre. Olivier reformule cet argument comme une raison de se voir. Il propose mardi 17 h ou jeudi 10 h ; M. Canot préfère entre midi et deux. Rendez-vous fixé mardi midi au 81 rue Jacantil, Levallois.",
+      "questions": [
+        {
+          "question": "Qui a recommandé Olivier Jacob à M. Canot ?",
+          "options": ["M. Socret", "M. Tornet", "Mme Branchu", "Personne, appel spontané."],
+          "correct": 0
+        },
+        {
+          "question": "Quelle est l'objection principale de M. Canot ?",
+          "options": [
+            "Le budget est déjà bouclé.",
+            "Il a déjà des fournisseurs dans le secteur.",
+            "La plaquette est incomplète.",
+            "L'entreprise est en restructuration."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Comment Olivier retourne-t-il cette objection ?",
+          "options": [
+            "Il propose une remise commerciale.",
+            "Il dit que c'est justement une raison pour se rencontrer et approfondir.",
+            "Il propose d'abandonner le sujet.",
+            "Il insiste en menaçant de rappeler tous les jours."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quels créneaux Olivier propose-t-il initialement ?",
+          "options": [
+            "Lundi 9 h ou mercredi 15 h.",
+            "Mardi 17 h ou jeudi 10 h.",
+            "Vendredi midi uniquement.",
+            "N'importe quel jour la semaine prochaine."
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Quel créneau M. Canot préfère-t-il ?",
+          "options": [
+            "Le matin tôt.",
+            "En fin de journée.",
+            "Entre midi et deux.",
+            "Le week-end."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Où le rendez-vous a-t-il finalement lieu ?",
+          "options": [
+            "Au siège d'Olivier Jacob.",
+            "Dans un restaurant à Paris.",
+            "Au 81 rue Jacantil, Levallois.",
+            "En visioconférence."
+          ],
+          "correct": 2
+        }
+      ]
     }
   ],
   "oral": [
     {
       "id": "o01",
       "audio": "audio/audio_1.weba",
-      "transcript": "Situation : un démarcheur téléphonique (Fahim, Performindex) insiste lourdement pour parler à Mme Branchu malgré tous les filtres. Vous êtes conseiller Amazon Business et un vendeur tiers appelle de la même manière pour joindre à tout prix un acheteur professionnel, sans avoir de sujet précis ni de rendez-vous.",
+      "transcript": "Situation : un démarcheur téléphonique (Fahim, Performindex) insiste lourdement pour parler à Mme Branchu malgré tous les filtres. Vous êtes conseiller Amazon Business et un vendeur tiers appelle de la même manière pour joindre un acheteur professionnel sans sujet précis ni rendez-vous.",
       "instruction": "Répondez oralement (max 60 s) au vendeur : cadrez fermement mais courtoisement le canal de contact (formulaire pro / messagerie Seller Central), refusez le transfert direct, expliquez pourquoi et proposez la marche à suivre."
     },
     {
       "id": "o02",
       "audio": "audio/audio_2.weba",
-      "transcript": "Situation : un commercial obtient un rendez-vous après avoir démontré des économies chiffrées (20–30 %). Transposition : un vendeur tiers vous appelle, il envisage de passer au programme Amazon FBA (Expédié par Amazon) mais hésite sur le coût comparé à sa logistique actuelle.",
-      "instruction": "Répondez oralement (max 60 s) en conseiller Amazon : reformulez son besoin, annoncez que vous pouvez lui envoyer un comparatif chiffré personnalisé, indiquez les données nécessaires (volumes, poids moyen, taux de retour) et proposez un rendez-vous de suivi."
+      "transcript": "Situation : un commercial obtient un rendez-vous en démontrant des économies chiffrées (20–30 %). Transposition : un vendeur tiers vous appelle, il envisage de passer au programme Amazon FBA mais hésite sur le coût comparé à sa logistique actuelle.",
+      "instruction": "Répondez oralement (max 60 s) en conseiller Amazon : reformulez son besoin, annoncez un comparatif chiffré personnalisé, indiquez les données nécessaires (volumes, poids moyen, taux de retour) et proposez un rendez-vous de suivi."
     },
     {
       "id": "o03",
       "audio": "audio/audio_3.weba",
-      "transcript": "Situation : un client agressif, tutoiement, insultes, propos discriminatoires envers la conseillère. Il refuse l'authentification et exige des informations sensibles. Transposition Amazon : le même profil de client réclame l'accès à sa commande sans passer par la vérification de sécurité.",
-      "instruction": "Répondez oralement (max 60 s) en conseiller Amazon : posez un cadre professionnel ferme, rappelez que les propos injurieux ne sont pas tolérés, expliquez pourquoi l'authentification est non négociable, et proposez la voie de sortie (authentification allégée limitée)."
+      "transcript": "Situation : un client agressif, tutoiement, insultes, propos discriminatoires. Il refuse l'authentification et exige des informations sensibles. Transposition Amazon : le même profil réclame l'accès à sa commande sans vérification.",
+      "instruction": "Répondez oralement (max 60 s) : posez un cadre professionnel ferme, rappelez que les propos injurieux ne sont pas tolérés, expliquez pourquoi l'authentification est non négociable, proposez une authentification allégée limitée."
     },
     {
       "id": "o04",
       "audio": "audio/audio_4.weba",
-      "transcript": "Situation : erreur logistique — le client a reçu une ancienne commande à la place de la nouvelle, et son propre client final s'est déplacé pour rien. La conseillère propose une livraison exceptionnelle directe. Transposition : un vendeur tiers Amazon vous appelle, un colis important pour son propre client final a été mal expédié par la logistique Amazon.",
-      "instruction": "Répondez oralement (max 60 s) : excusez-vous concrètement, résumez ce que vous avez compris pour vérification, proposez une solution de livraison express directe au client final et indiquez le délai."
+      "transcript": "Situation : erreur logistique — le client a reçu une ancienne commande, son propre client final s'est déplacé pour rien. Transposition : un vendeur tiers Amazon vous appelle, un colis important pour son client final a été mal expédié par la logistique Amazon.",
+      "instruction": "Répondez oralement (max 60 s) : excusez-vous concrètement, résumez ce que vous avez compris pour vérification, proposez une livraison express directe au client final avec délai."
+    },
+    {
+      "id": "o05",
+      "audio": "audio/audio_5.weba",
+      "transcript": "Situation : un commercial obtient un rendez-vous en retournant l'objection « nous avons déjà des fournisseurs ». Transposition : vous êtes conseiller Amazon Ads. Un vendeur tiers vous dit qu'il utilise déjà Google Ads et ne voit pas l'intérêt d'Amazon Ads.",
+      "instruction": "Répondez oralement (max 60 s) : retournez l'objection en atout (audience acheteuse), proposez un audit rapide et un créneau précis."
     }
   ],
   "writing": [
@@ -139,28 +361,28 @@
     },
     {
       "id": "w02",
-      "context": "Objet : Triple facturation\n\nBonjour,\n\nVotre application a planté trois fois au moment du paiement samedi soir. Résultat : j'ai été débité trois fois de 187,50 € pour une seule et même commande de matériel de bricolage. Une seule confirmation de commande reçue, trois débits sur mon compte. Je veux le remboursement des deux débits excédentaires sous 72 h, sinon je saisis mon assurance moyens de paiement.\n\nM. Roux",
-      "instruction": "Répondez par écrit (max 100 mots) : reconnaissez l'erreur technique, expliquez la différence autorisation/débit si pertinent, engagez-vous sur un remboursement avec délai précis et un numéro de suivi de dossier."
+      "context": "Objet : Triple facturation\n\nBonjour,\n\nVotre application a planté trois fois au moment du paiement samedi soir. Résultat : j'ai été débité trois fois de 187,50 € pour une seule et même commande. Une seule confirmation reçue, trois débits. Je veux le remboursement des deux débits excédentaires sous 72 h.\n\nM. Roux",
+      "instruction": "Répondez par écrit (max 100 mots) : reconnaissez l'erreur, expliquez autorisation/débit, engagez-vous sur un remboursement avec délai et numéro de dossier."
     },
     {
       "id": "w03",
-      "context": "Objet : Livre ancien remplacé par un autre article\n\nBonjour,\n\nJ'ai commandé une édition originale de 1954 à 340 € auprès d'un libraire partenaire. J'ai reçu… un roman de gare à 6 €. L'étiquette de retour proposée me demande d'affranchir moi-même le colis, ce qui est inacceptable : l'erreur vient du vendeur. Je demande une étiquette prépayée, le remboursement intégral à réception, et je signale ce vendeur dont les avis récents mentionnent des faits similaires.\n\nDr Lambert",
-      "instruction": "Répondez par écrit (max 100 mots) : validez la demande d'étiquette prépayée, décrivez le processus de remboursement, indiquez que le signalement du vendeur est transmis à l'équipe concernée."
+      "context": "Objet : Livre ancien remplacé par un autre article\n\nBonjour,\n\nJ'ai commandé une édition originale de 1954 à 340 € auprès d'un libraire partenaire. J'ai reçu un roman de gare à 6 €. L'étiquette de retour proposée me demande d'affranchir moi-même, ce qui est inacceptable.\n\nDr Lambert",
+      "instruction": "Répondez par écrit (max 100 mots) : validez l'étiquette prépayée, décrivez le processus de remboursement, indiquez que le signalement du vendeur est transmis."
     },
     {
       "id": "w04",
-      "context": "Objet : Abonnement « Économisez en vous abonnant » impossible à résilier\n\nBonjour,\n\nCela fait trois mois que je tente d'annuler la livraison mensuelle de croquettes (32 €/mois) : le bouton « Annuler l'abonnement » renvoie une page d'erreur, et ce sur deux navigateurs différents. Trois sacs se sont accumulés dans mon garage. Je veux : la résiliation effective, le remboursement des deux dernières livraisons, et savoir si je dois renvoyer les sacs.\n\nMme Fontaine",
-      "instruction": "Répondez par écrit (max 100 mots) : confirmez la résiliation effectuée manuellement, statuez sur le remboursement et le sort des sacs déjà livrés, excusez-vous pour le bug signalé."
+      "context": "Objet : Abonnement impossible à résilier\n\nBonjour,\n\nTrois mois que je tente d'annuler la livraison mensuelle de croquettes (32 €/mois) : le bouton renvoie une page d'erreur. Trois sacs se sont accumulés. Je veux la résiliation, le remboursement des deux dernières livraisons, et savoir si je dois renvoyer les sacs.\n\nMme Fontaine",
+      "instruction": "Répondez par écrit (max 100 mots) : confirmez la résiliation manuelle, statuez sur le remboursement et le sort des sacs, excusez-vous pour le bug."
     },
     {
       "id": "w05",
-      "context": "Objet : Avis supprimé sans explication\n\nBonjour,\n\nJ'avais publié un avis détaillé et factuel (3 étoiles) sur un aspirateur, mentionnant une autonomie inférieure de moitié à celle annoncée, mesures à l'appui. Mon avis a été supprimé au motif de « non-conformité aux lignes directrices », sans plus de précision. Je n'ai ni insulté personne ni mentionné de concurrent. J'aimerais comprendre quelle règle j'aurais enfreinte et comment republier mon avis.\n\nM. Haddad",
-      "instruction": "Répondez par écrit (max 100 mots) : expliquez les motifs fréquents de suppression, la procédure de réexamen, et comment reformuler l'avis pour qu'il soit conforme — ton neutre et non défensif."
+      "context": "Objet : Avis supprimé sans explication\n\nBonjour,\n\nMon avis factuel (3 étoiles) sur un aspirateur, avec mesures à l'appui, a été supprimé pour « non-conformité aux lignes directrices », sans précision. Je n'ai ni insulté ni cité de concurrent.\n\nM. Haddad",
+      "instruction": "Répondez par écrit (max 100 mots) : expliquez les motifs fréquents de suppression, la procédure de réexamen, comment reformuler l'avis. Ton neutre."
     },
     {
       "id": "w06",
-      "context": "Objet : Adresse erronée — colis livré chez l'ancien locataire\n\nBonjour,\n\nJ'ai déménagé il y a deux mois et mis à jour mon adresse, du moins je le croyais. Ma dernière commande (une montre à 210 €) est partie à mon ancienne adresse, et le nouveau locataire affirme n'avoir rien reçu. Le suivi indique « livré dans la boîte aux lettres ». Qui est responsable dans ce cas : moi, le transporteur ou l'occupant actuel ? Et surtout, que pouvez-vous faire ?\n\nMlle Yilmaz",
-      "instruction": "Répondez par écrit (max 100 mots) : clarifiez la question de responsabilité avec tact, exposez les options concrètes (enquête transporteur, geste commercial éventuel), rappelez comment vérifier l'adresse par défaut."
+      "context": "Objet : Adresse erronée — colis chez l'ancien locataire\n\nBonjour,\n\nJ'ai déménagé il y a deux mois et cru avoir mis à jour mon adresse. Ma dernière commande (une montre à 210 €) est partie à l'ancienne adresse, le nouveau locataire nie l'avoir reçue. Le suivi indique « livré dans la boîte aux lettres ». Que pouvez-vous faire ?\n\nMlle Yilmaz",
+      "instruction": "Répondez par écrit (max 100 mots) : clarifiez la responsabilité avec tact, exposez les options (enquête transporteur, geste commercial éventuel), rappelez comment vérifier l'adresse par défaut."
     }
   ]
 }
