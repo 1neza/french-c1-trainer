@@ -1,0 +1,178 @@
+{
+  "comprehension": [
+    {
+      "id": "c01",
+      "type": "text",
+      "context": "Objet : Impossible d'accéder à mon compte\n\nBonjour,\n\nDepuis hier soir, je n'arrive plus à me connecter à mon compte Amazon. Le site m'indique que mon mot de passe est incorrect, alors que je suis certain de ne pas l'avoir changé. J'ai tenté la procédure « Mot de passe oublié », mais je ne reçois aucun courriel de réinitialisation, ni dans ma boîte de réception ni dans mes courriers indésirables. J'ai une commande en cours dont je dois absolument suivre la livraison. Pourriez-vous vérifier si mon compte a été bloqué ou compromis ?\n\nCordialement,\nM. Lefèvre",
+      "question": "Quel est le problème principal du client ?",
+      "options": [
+        "Il a oublié son adresse e-mail de connexion.",
+        "Il ne reçoit pas l'e-mail de réinitialisation et soupçonne un blocage ou un piratage de son compte.",
+        "Sa commande a été annulée sans son accord.",
+        "Il souhaite changer son mot de passe par téléphone."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "c02",
+      "type": "text",
+      "context": "Objet : Colis indiqué livré mais introuvable\n\nBonjour,\n\nLe suivi de ma commande n° 402-5567 indique que le colis a été livré ce matin à 10 h 42, remis « en main propre ». Or, j'étais chez moi toute la matinée et personne n'a sonné. J'ai vérifié auprès de mes voisins et du gardien de l'immeuble : rien. Il s'agit d'un cadeau d'anniversaire que je dois offrir samedi. Que proposez-vous : un renvoi ou un remboursement ?\n\nBien à vous,\nMme Okafor",
+      "question": "Quelle affirmation correspond à la situation décrite ?",
+      "options": [
+        "Le colis a été volé devant sa porte après la livraison.",
+        "La cliente a refusé la livraison car elle était absente.",
+        "Le suivi indique une livraison en main propre que la cliente conteste, et elle attend une solution rapide.",
+        "La cliente demande uniquement un geste commercial, pas de renvoi."
+      ],
+      "correct": 2
+    },
+    {
+      "id": "c03",
+      "type": "text",
+      "context": "Objet : Prélèvement Prime non autorisé\n\nBonjour,\n\nJe constate un prélèvement de 6,99 € intitulé « Amazon Prime » sur mon relevé bancaire, alors que je n'ai jamais souscrit volontairement à cet abonnement. Je suppose avoir activé un essai gratuit par inadvertance lors d'une commande le mois dernier. Je souhaite l'annulation immédiate de l'abonnement ainsi que le remboursement du montant prélevé, faute de quoi je ferai opposition auprès de ma banque.\n\nCordialement,\nM. Da Silva",
+      "question": "Que demande précisément le client ?",
+      "options": [
+        "La résiliation de Prime et le remboursement du prélèvement, sous peine d'opposition bancaire.",
+        "Une réduction sur son abonnement Prime annuel.",
+        "Des explications sur les avantages de Prime avant de décider.",
+        "Le remboursement de sa dernière commande."
+      ],
+      "correct": 0
+    },
+    {
+      "id": "c04",
+      "type": "text",
+      "context": "Objet : Article reçu endommagé — vendeur tiers\n\nBonjour,\n\nJ'ai reçu hier une cafetière commandée auprès d'un vendeur tiers sur votre plateforme. Le carton était intact, mais l'appareil présente une fissure sur le réservoir et fuit dès la première utilisation. J'ai contacté le vendeur il y a cinq jours via la messagerie, sans aucune réponse. Le délai de réponse de 48 h étant largement dépassé, je souhaite faire jouer la Garantie A à Z pour obtenir un remboursement intégral.\n\nMerci de votre diligence,\nMme Bernard",
+      "question": "Pourquoi la cliente s'adresse-t-elle directement à Amazon plutôt qu'au vendeur ?",
+      "options": [
+        "Parce que le vendeur a refusé explicitement le remboursement.",
+        "Parce que le vendeur n'a pas répondu dans le délai imparti, ce qui ouvre droit à la Garantie A à Z.",
+        "Parce que le colis est arrivé ouvert et incomplet.",
+        "Parce qu'elle ne sait pas comment contacter le vendeur."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "c05",
+      "type": "text",
+      "context": "Objet : Consigne Amazon Locker inaccessible\n\nBonjour,\n\nJe devais retirer un colis à la consigne « Locker Tulipe », mais celle-ci est hors service : l'écran est éteint et le code de retrait ne fonctionne pas. Le délai de retrait expire demain et je pars en déplacement professionnel pour deux semaines. Pouvez-vous soit prolonger le délai, soit rediriger le colis vers mon domicile ?\n\nCordialement,\nM. Nowak",
+      "question": "Quelle est la contrainte principale exprimée par le client ?",
+      "options": [
+        "Il a perdu son code de retrait.",
+        "Le point relais est trop éloigné de son domicile.",
+        "Il refuse désormais les livraisons en consigne.",
+        "Le délai expire avant son départ prolongé, il faut prolonger le retrait ou rediriger le colis."
+      ],
+      "correct": 3
+    },
+    {
+      "id": "c06",
+      "type": "text",
+      "context": "Objet : Débit après annulation de commande\n\nBonjour,\n\nJ'ai annulé ma commande n° 171-8890 trois minutes après l'avoir passée, et j'ai bien reçu l'e-mail de confirmation d'annulation. Pourtant, ma banque m'indique un débit de 249 €. Votre site parle d'une simple « autorisation temporaire », mais quinze jours se sont écoulés et la somme n'est toujours pas restituée. Je commence à perdre patience : à qui dois-je m'adresser, à vous ou à ma banque ?\n\nM. Cohen",
+      "question": "Quel malentendu faut-il clarifier pour ce client ?",
+      "options": [
+        "Sa commande n'a en réalité jamais été annulée.",
+        "La différence entre une autorisation bancaire temporaire et un débit réel, et le délai de libération des fonds.",
+        "Le montant débité ne correspond pas à sa commande.",
+        "Il a été victime d'une fraude à la carte bancaire."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "c07",
+      "type": "text",
+      "context": "Objet : Carte cadeau — tentative d'escroquerie ?\n\nBonjour,\n\nMa mère, âgée de 78 ans, a reçu un appel d'une personne se présentant comme un « agent Amazon » qui lui a demandé d'acheter pour 400 € de cartes cadeaux afin de « débloquer » son compte, puis de communiquer les codes par téléphone. Elle a acheté les cartes mais, heureusement, ne les a pas encore communiquées. Je soupçonne une arnaque. Les cartes peuvent-elles être remboursées et comment sécuriser son compte ?\n\nMme Girard",
+      "question": "Quelle est la situation ?",
+      "options": [
+        "La mère a communiqué les codes et perdu 400 €.",
+        "Une tentative d'escroquerie a été interrompue avant la communication des codes ; la fille demande remboursement et sécurisation.",
+        "Amazon a réellement bloqué le compte de la mère pour impayé.",
+        "La cliente conteste l'achat de cartes cadeaux effectué par sa mère sur le site."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "c08",
+      "type": "text",
+      "context": "Objet : Retour refusé — fenêtre dépassée\n\nBonjour,\n\nJ'ai voulu retourner une paire d'enceintes achetée il y a 45 jours, mais le site refuse ma demande car le délai de 30 jours est dépassé. J'étais hospitalisé pendant six semaines, certificat médical à l'appui, et je n'ai matériellement pas pu effectuer le retour à temps. Les enceintes sont neuves, jamais déballées. J'espère qu'une exception est possible au vu des circonstances.\n\nRespectueusement,\nM. Traoré",
+      "question": "Sur quoi le client fonde-t-il sa demande d'exception ?",
+      "options": [
+        "Sur un défaut de fabrication des enceintes.",
+        "Sur une promesse écrite d'un précédent conseiller.",
+        "Sur une impossibilité médicale justifiée de respecter le délai, produit non déballé.",
+        "Sur le fait que le délai légal de rétractation est de 60 jours."
+      ],
+      "correct": 2
+    }
+  ],
+  "oral": [
+    {
+      "id": "o01",
+      "audio": "audio/oral_01.mp3",
+      "transcript": "Bonjour… oui, bonjour. Écoutez, je suis vraiment agacée. Ça fait trois fois que j'essaie de me connecter à mon compte et à chaque fois on me dit « activité inhabituelle détectée » et on me déconnecte. J'ai changé mon mot de passe deux fois, j'ai validé le code reçu par SMS, et rien n'y fait. J'ai des commandes à passer pour mon commerce, je perds de l'argent, là. Qu'est-ce que vous comptez faire, concrètement ?",
+      "instruction": "La cliente est bloquée hors de son compte malgré plusieurs vérifications. Répondez oralement (max 60 s) : montrez de l'empathie, expliquez la cause probable, annoncez les étapes concrètes de déblocage."
+    },
+    {
+      "id": "o02",
+      "audio": "audio/oral_02.mp3",
+      "transcript": "Oui bonjour, alors voilà, j'ai commandé un ordinateur portable à 899 euros, livraison prévue hier, garantie avant Noël, c'était écrit noir sur blanc. Et là je vois que le colis est « retardé, nouvelle date inconnue ». Inconnue ! C'est le cadeau principal de mon fils. Soit vous me garantissez une livraison avant le 24, soit j'annule et je l'achète en magasin — mais dans ce cas je veux un geste, parce que franchement, c'est pas sérieux.",
+      "instruction": "Le client menace d'annuler à cause d'un retard de livraison avant Noël. Répondez oralement (max 60 s) : présentez des excuses, vérifiez les options réalistes, proposez une solution et, si pertinent, un geste commercial."
+    },
+    {
+      "id": "o03",
+      "audio": "audio/oral_03.mp3",
+      "transcript": "Bonjour. Je vous appelle parce que j'ai reçu un réfrigérateur ce matin, et les livreurs ont abîmé mon parquet en le transportant — il y a des rayures profondes sur deux mètres. Ils ont refusé de faire un constat et sont repartis. J'ai des photos, et le voisin a tout vu. Le frigo, lui, fonctionne, ce n'est pas la question. Ce que je veux savoir, c'est comment Amazon compte m'indemniser pour les dégâts.",
+      "instruction": "Un client demande une indemnisation pour des dégâts causés par les livreurs à son domicile. Répondez oralement (max 60 s) : cadrez la procédure de réclamation dommages, listez les pièces à fournir, donnez un délai de traitement."
+    },
+    {
+      "id": "o04",
+      "audio": "audio/oral_04.mp3",
+      "transcript": "Allô, bonjour. Voilà, c'est un peu délicat… Mon mari est décédé le mois dernier, et son compte Amazon continue de prélever des abonnements — Prime, et je crois deux abonnements « Économisez en vous abonnant ». Je n'ai pas ses identifiants et je ne sais pas par où commencer. On me demande des documents à chaque fois et on me renvoie de service en service. Vous pouvez m'aider, s'il vous plaît ?",
+      "instruction": "Situation sensible : clôture du compte d'une personne décédée et arrêt des prélèvements. Répondez oralement (max 60 s) : ton adapté, condoléances sobres, documents nécessaires, étapes et engagement de suivi personnalisé."
+    },
+    {
+      "id": "o05",
+      "audio": "audio/oral_05.mp3",
+      "transcript": "Bonjour, je suis vendeur professionnel sur votre marketplace depuis quatre ans. Un client a laissé un commentaire d'une étoile affirmant que mon produit est une contrefaçon, ce qui est faux et diffamatoire — j'ai les factures du fabricant. Ce commentaire a fait chuter mes ventes de trente pour cent en une semaine. Je demande sa suppression immédiate. On m'a déjà répondu deux fois avec des messages automatiques, alors cette fois j'aimerais une vraie réponse.",
+      "instruction": "Un vendeur tiers conteste un avis client qu'il juge diffamatoire. Répondez oralement (max 60 s) : expliquez la politique d'avis, les critères de suppression, la procédure d'escalade et les preuves à joindre — sans rien promettre d'indu."
+    },
+    {
+      "id": "o06",
+      "audio": "audio/oral_06.mp3",
+      "transcript": "Oui, bonjour. Alors moi j'ai un problème avec la consigne, là, le Locker près de la gare. J'ai scanné le code-barres, la porte s'est ouverte, mais le casier était vide ! Vide ! Et l'application me dit « colis retiré ». Donc pour vous, j'ai mon colis, et pour moi, je n'ai rien du tout. C'était des médicaments pour mon traitement, en plus. Il me les faut avant lundi.",
+      "instruction": "Colis marqué retiré mais casier vide, produit urgent (parapharmacie). Répondez oralement (max 60 s) : rassurez, expliquez l'enquête consigne, proposez renvoi express ou remboursement, tenez compte de l'urgence."
+    }
+  ],
+  "writing": [
+    {
+      "id": "w01",
+      "context": "Objet : Compte bloqué avant les soldes\n\nBonjour,\n\nMon compte a été suspendu ce matin pour « activité de paiement suspecte », juste après que j'ai mis à jour ma carte bancaire arrivée à expiration. J'ai envoyé une copie de mon relevé comme demandé, il y a 48 heures, sans retour. Les Ventes Flash commencent demain et mon panier est prêt. Pouvez-vous accélérer la vérification ?\n\nCordialement,\nMme Petit",
+      "instruction": "Répondez par écrit en tant que conseiller Amazon (max 100 mots) : accusez réception, expliquez le contrôle de sécurité, donnez un délai réaliste et une alternative si le compte n'est pas rétabli à temps."
+    },
+    {
+      "id": "w02",
+      "context": "Objet : Triple facturation\n\nBonjour,\n\nVotre application a planté trois fois au moment du paiement samedi soir. Résultat : j'ai été débité trois fois de 187,50 € pour une seule et même commande de matériel de bricolage. Une seule confirmation de commande reçue, trois débits sur mon compte. Je veux le remboursement des deux débits excédentaires sous 72 h, sinon je saisis mon assurance moyens de paiement.\n\nM. Roux",
+      "instruction": "Répondez par écrit (max 100 mots) : reconnaissez l'erreur technique, expliquez la différence autorisation/débit si pertinent, engagez-vous sur un remboursement avec délai précis et un numéro de suivi de dossier."
+    },
+    {
+      "id": "w03",
+      "context": "Objet : Livre ancien remplacé par un autre article\n\nBonjour,\n\nJ'ai commandé une édition originale de 1954 à 340 € auprès d'un libraire partenaire. J'ai reçu… un roman de gare à 6 €. L'étiquette de retour proposée me demande d'affranchir moi-même le colis, ce qui est inacceptable : l'erreur vient du vendeur. Je demande une étiquette prépayée, le remboursement intégral à réception, et je signale ce vendeur dont les avis récents mentionnent des faits similaires.\n\nDr Lambert",
+      "instruction": "Répondez par écrit (max 100 mots) : validez la demande d'étiquette prépayée, décrivez le processus de remboursement, indiquez que le signalement du vendeur est transmis à l'équipe concernée."
+    },
+    {
+      "id": "w04",
+      "context": "Objet : Abonnement « Économisez en vous abonnant » impossible à résilier\n\nBonjour,\n\nCela fait trois mois que je tente d'annuler la livraison mensuelle de croquettes (32 €/mois) : le bouton « Annuler l'abonnement » renvoie une page d'erreur, et ce sur deux navigateurs différents. Trois sacs se sont accumulés dans mon garage. Je veux : la résiliation effective, le remboursement des deux dernières livraisons, et savoir si je dois renvoyer les sacs.\n\nMme Fontaine",
+      "instruction": "Répondez par écrit (max 100 mots) : confirmez la résiliation effectuée manuellement, statuez sur le remboursement et le sort des sacs déjà livrés, excusez-vous pour le bug signalé."
+    },
+    {
+      "id": "w05",
+      "context": "Objet : Avis supprimé sans explication\n\nBonjour,\n\nJ'avais publié un avis détaillé et factuel (3 étoiles) sur un aspirateur, mentionnant une autonomie inférieure de moitié à celle annoncée, mesures à l'appui. Mon avis a été supprimé au motif de « non-conformité aux lignes directrices », sans plus de précision. Je n'ai ni insulté personne ni mentionné de concurrent. J'aimerais comprendre quelle règle j'aurais enfreinte et comment republier mon avis.\n\nM. Haddad",
+      "instruction": "Répondez par écrit (max 100 mots) : expliquez les motifs fréquents de suppression, la procédure de réexamen, et comment reformuler l'avis pour qu'il soit conforme — ton neutre et non défensif."
+    },
+    {
+      "id": "w06",
+      "context": "Objet : Adresse erronée — colis livré chez l'ancien locataire\n\nBonjour,\n\nJ'ai déménagé il y a deux mois et mis à jour mon adresse, du moins je le croyais. Ma dernière commande (une montre à 210 €) est partie à mon ancienne adresse, et le nouveau locataire affirme n'avoir rien reçu. Le suivi indique « livré dans la boîte aux lettres ». Qui est responsable dans ce cas : moi, le transporteur ou l'occupant actuel ? Et surtout, que pouvez-vous faire ?\n\nMlle Yilmaz",
+      "instruction": "Répondez par écrit (max 100 mots) : clarifiez la question de responsabilité avec tact, exposez les options concrètes (enquête transporteur, geste commercial éventuel), rappelez comment vérifier l'adresse par défaut."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Épreuve C1 — Service Client Amazon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">C1</span>
+      <span class="brand-text">Épreuve · Service Client</span>
+    </div>
+    <div class="topbar-right">
+      <span id="session-progress" class="session-progress"></span>
+      <span id="user-email" class="session-progress"></span>
+      <button id="btn-logout" class="btn-ghost hidden">Déconnexion</button>
+    </div>
+  </div>
+  <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+</header>
+
+<main id="app" class="app"></main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
