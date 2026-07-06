@@ -28,7 +28,7 @@
     },
     {
       "id": "c03",
-      "audio": "audio/audio_3.weba",
+      "audio": "audio/audio_3.mp4",
       "transcript": "M. Sylvain Dubois appelle sa banque pour connaître le solde. Magali lui demande les chiffres de son code secret ; les combinaisons données ne correspondent pas. Le client s'énerve, tient des propos racistes et injurieux, tutoie et insulte la conseillère (« pauvre conne »). Magali refuse de raccrocher mais propose une authentification alternative par questions, ne donnant accès qu'à une partie du compte. Le client menace d'écrire au siège ; Magali reste professionnelle et lui suggère de changer de banque avant de raccrocher poliment.",
       "question": "Comment la conseillère gère-t-elle l'agressivité du client ?",
       "options": [
@@ -41,7 +41,7 @@
     },
     {
       "id": "c04",
-      "audio": "audio/audio_4.weba",
+      "audio": "audio/audio_4.mp4",
       "transcript": "M. Tornet (Librairie du Forum à Bourges) appelle furieux : la livraison de cette semaine est incorrecte. Amandine identifie qu'il a reçu par erreur la commande précédente (B5566), celle-là même qu'il avait refusée la semaine passée, accompagnée d'échantillons offerts en compensation. La vraie commande B5567 (quatre collections Arc-en-ciel 48) arrivera en fin de semaine, mais le client final s'est déplacé aujourd'hui. Amandine propose, à titre exceptionnel, de livrer directement chez le client final si M. Tornet envoie le détail par fax.",
       "question": "Quelle solution exceptionnelle Amandine propose-t-elle ?",
       "options": [
