@@ -2,32 +2,71 @@
   "comprehension": [
     {
       "id": "c01",
-      "type": "text",
-      "context": "Objet : Impossible d'accéder à mon compte\n\nBonjour,\n\nDepuis hier soir, je n'arrive plus à me connecter à mon compte Amazon. Le site m'indique que mon mot de passe est incorrect, alors que je suis certain de ne pas l'avoir changé. J'ai tenté la procédure « Mot de passe oublié », mais je ne reçois aucun courriel de réinitialisation, ni dans ma boîte de réception ni dans mes courriers indésirables. J'ai une commande en cours dont je dois absolument suivre la livraison. Pourriez-vous vérifier si mon compte a été bloqué ou compromis ?\n\nCordialement,\nM. Lefèvre",
-      "question": "Quel est le problème principal du client ?",
+      "audio": "audio/audio_1.weba",
+      "transcript": "Fahim (Performindex) appelle Stock'inbox pour parler à Mme Branchu. La standardiste multiplie les obstacles : sujet vague, prénom erroné, agenda saturé, refus de donner un mail direct. Fahim rappelle : on lui dit que Mme Branchu répondra au mail. Il rappelle encore : Mme Branchu a lu l'offre et n'est pas intéressée. À la fin, la standardiste révèle qu'elle est en réalité Mme Branchu elle-même.",
+      "question": "Quelle est la stratégie de Mme Branchu face au démarcheur ?",
       "options": [
-        "Il a oublié son adresse e-mail de connexion.",
-        "Il ne reçoit pas l'e-mail de réinitialisation et soupçonne un blocage ou un piratage de son compte.",
-        "Sa commande a été annulée sans son accord.",
-        "Il souhaite changer son mot de passe par téléphone."
+        "Elle accepte un rendez-vous en fin de journée.",
+        "Elle se fait passer pour son assistante afin de filtrer et décourager l'appel.",
+        "Elle transfère l'appel à un collègue du service achats.",
+        "Elle demande une proposition écrite pour l'étudier sérieusement."
       ],
       "correct": 1
     },
     {
       "id": "c02",
-      "type": "text",
-      "context": "Objet : Colis indiqué livré mais introuvable\n\nBonjour,\n\nLe suivi de ma commande n° 402-5567 indique que le colis a été livré ce matin à 10 h 42, remis « en main propre ». Or, j'étais chez moi toute la matinée et personne n'a sonné. J'ai vérifié auprès de mes voisins et du gardien de l'immeuble : rien. Il s'agit d'un cadeau d'anniversaire que je dois offrir samedi. Que proposez-vous : un renvoi ou un remboursement ?\n\nBien à vous,\nMme Okafor",
-      "question": "Quelle affirmation correspond à la situation décrite ?",
+      "audio": "audio/audio_2.weba",
+      "transcript": "Éric Souplin, commercial d'Aquaforé (fontaines à eau), contacte l'agence RVB. Sandrine le transfère à Karema Wardich, assistante de M. Tornet. Karema explique qu'ils utilisent des bouteilles individuelles, qu'elle voudrait limiter les commandes car les gens gaspillent. Éric propose un tableau comparatif chiffré sur base de 25 collaborateurs, annonçant 20 à 30 % d'économies, et une démonstration. Karema demande d'abord la proposition chiffrée par courrier ; ils fixent un rendez-vous mardi 14 avril à 17 h au 22 boulevard Beaumarché.",
+      "question": "Quel est l'accord final obtenu par le commercial ?",
       "options": [
-        "Le colis a été volé devant sa porte après la livraison.",
-        "La cliente a refusé la livraison car elle était absente.",
-        "Le suivi indique une livraison en main propre que la cliente conteste, et elle attend une solution rapide.",
-        "La cliente demande uniquement un geste commercial, pas de renvoi."
+        "Une commande immédiate de fontaines à eau.",
+        "Un refus définitif de la part de l'assistante.",
+        "L'envoi d'une proposition chiffrée puis un rendez-vous de principe le 14 avril à 17 h.",
+        "Une démonstration sans engagement dès le lendemain matin."
       ],
       "correct": 2
     },
     {
       "id": "c03",
+      "audio": "audio/audio_3.weba",
+      "transcript": "M. Sylvain Dubois appelle sa banque pour connaître le solde. Magali lui demande les chiffres de son code secret ; les combinaisons données ne correspondent pas. Le client s'énerve, tient des propos racistes et injurieux, tutoie et insulte la conseillère (« pauvre conne »). Magali refuse de raccrocher mais propose une authentification alternative par questions, ne donnant accès qu'à une partie du compte. Le client menace d'écrire au siège ; Magali reste professionnelle et lui suggère de changer de banque avant de raccrocher poliment.",
+      "question": "Comment la conseillère gère-t-elle l'agressivité du client ?",
+      "options": [
+        "Elle raccroche immédiatement après la première insulte.",
+        "Elle cède et lui communique le solde sans authentification.",
+        "Elle reste professionnelle, propose une authentification de secours et signale que l'appel est enregistré.",
+        "Elle transfère l'appel à son manager dès le début de la conversation."
+      ],
+      "correct": 2
+    },
+    {
+      "id": "c04",
+      "audio": "audio/audio_4.weba",
+      "transcript": "M. Tornet (Librairie du Forum à Bourges) appelle furieux : la livraison de cette semaine est incorrecte. Amandine identifie qu'il a reçu par erreur la commande précédente (B5566), celle-là même qu'il avait refusée la semaine passée, accompagnée d'échantillons offerts en compensation. La vraie commande B5567 (quatre collections Arc-en-ciel 48) arrivera en fin de semaine, mais le client final s'est déplacé aujourd'hui. Amandine propose, à titre exceptionnel, de livrer directement chez le client final si M. Tornet envoie le détail par fax.",
+      "question": "Quelle solution exceptionnelle Amandine propose-t-elle ?",
+      "options": [
+        "Rembourser intégralement la commande B5567.",
+        "Livrer directement le client final de M. Tornet, sur envoi du détail par fax.",
+        "Renvoyer immédiatement la bonne commande par transporteur express.",
+        "Annuler la commande et offrir une remise sur la prochaine."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "c05",
+      "audio": "audio/audio_5.weba",
+      "transcript": "Olivier Jacob (recommandé par M. Socret) rappelle M. Canot chez Ubisoft pour fixer un rendez-vous. M. Canot a reçu la plaquette, la trouve intéressante mais indique qu'il a déjà des fournisseurs dans le secteur et doute de l'utilité d'une rencontre. Olivier reformule justement cet argument comme une raison de se voir. Il propose mardi 17 h ou jeudi 10 h ; M. Canot préfère entre midi et deux. Rendez-vous fixé mardi midi au 81 rue Jacantil, Levallois.",
+      "question": "Comment le commercial obtient-il le rendez-vous malgré la réticence initiale ?",
+      "options": [
+        "Il propose une réduction commerciale attractive.",
+        "Il retourne l'objection (« déjà des fournisseurs ») comme raison même de se rencontrer et propose plusieurs créneaux.",
+        "Il insiste en menaçant de rappeler tous les jours.",
+        "Il demande à parler directement à M. Socret."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "c06",
       "type": "text",
       "context": "Objet : Prélèvement Prime non autorisé\n\nBonjour,\n\nJe constate un prélèvement de 6,99 € intitulé « Amazon Prime » sur mon relevé bancaire, alors que je n'ai jamais souscrit volontairement à cet abonnement. Je suppose avoir activé un essai gratuit par inadvertance lors d'une commande le mois dernier. Je souhaite l'annulation immédiate de l'abonnement ainsi que le remboursement du montant prélevé, faute de quoi je ferai opposition auprès de ma banque.\n\nCordialement,\nM. Da Silva",
       "question": "Que demande précisément le client ?",
@@ -40,7 +79,7 @@
       "correct": 0
     },
     {
-      "id": "c04",
+      "id": "c07",
       "type": "text",
       "context": "Objet : Article reçu endommagé — vendeur tiers\n\nBonjour,\n\nJ'ai reçu hier une cafetière commandée auprès d'un vendeur tiers sur votre plateforme. Le carton était intact, mais l'appareil présente une fissure sur le réservoir et fuit dès la première utilisation. J'ai contacté le vendeur il y a cinq jours via la messagerie, sans aucune réponse. Le délai de réponse de 48 h étant largement dépassé, je souhaite faire jouer la Garantie A à Z pour obtenir un remboursement intégral.\n\nMerci de votre diligence,\nMme Bernard",
       "question": "Pourquoi la cliente s'adresse-t-elle directement à Amazon plutôt qu'au vendeur ?",
@@ -53,20 +92,7 @@
       "correct": 1
     },
     {
-      "id": "c05",
-      "type": "text",
-      "context": "Objet : Consigne Amazon Locker inaccessible\n\nBonjour,\n\nJe devais retirer un colis à la consigne « Locker Tulipe », mais celle-ci est hors service : l'écran est éteint et le code de retrait ne fonctionne pas. Le délai de retrait expire demain et je pars en déplacement professionnel pour deux semaines. Pouvez-vous soit prolonger le délai, soit rediriger le colis vers mon domicile ?\n\nCordialement,\nM. Nowak",
-      "question": "Quelle est la contrainte principale exprimée par le client ?",
-      "options": [
-        "Il a perdu son code de retrait.",
-        "Le point relais est trop éloigné de son domicile.",
-        "Il refuse désormais les livraisons en consigne.",
-        "Le délai expire avant son départ prolongé, il faut prolonger le retrait ou rediriger le colis."
-      ],
-      "correct": 3
-    },
-    {
-      "id": "c06",
+      "id": "c08",
       "type": "text",
       "context": "Objet : Débit après annulation de commande\n\nBonjour,\n\nJ'ai annulé ma commande n° 171-8890 trois minutes après l'avoir passée, et j'ai bien reçu l'e-mail de confirmation d'annulation. Pourtant, ma banque m'indique un débit de 249 €. Votre site parle d'une simple « autorisation temporaire », mais quinze jours se sont écoulés et la somme n'est toujours pas restituée. Je commence à perdre patience : à qui dois-je m'adresser, à vous ou à ma banque ?\n\nM. Cohen",
       "question": "Quel malentendu faut-il clarifier pour ce client ?",
@@ -77,70 +103,32 @@
         "Il a été victime d'une fraude à la carte bancaire."
       ],
       "correct": 1
-    },
-    {
-      "id": "c07",
-      "type": "text",
-      "context": "Objet : Carte cadeau — tentative d'escroquerie ?\n\nBonjour,\n\nMa mère, âgée de 78 ans, a reçu un appel d'une personne se présentant comme un « agent Amazon » qui lui a demandé d'acheter pour 400 € de cartes cadeaux afin de « débloquer » son compte, puis de communiquer les codes par téléphone. Elle a acheté les cartes mais, heureusement, ne les a pas encore communiquées. Je soupçonne une arnaque. Les cartes peuvent-elles être remboursées et comment sécuriser son compte ?\n\nMme Girard",
-      "question": "Quelle est la situation ?",
-      "options": [
-        "La mère a communiqué les codes et perdu 400 €.",
-        "Une tentative d'escroquerie a été interrompue avant la communication des codes ; la fille demande remboursement et sécurisation.",
-        "Amazon a réellement bloqué le compte de la mère pour impayé.",
-        "La cliente conteste l'achat de cartes cadeaux effectué par sa mère sur le site."
-      ],
-      "correct": 1
-    },
-    {
-      "id": "c08",
-      "type": "text",
-      "context": "Objet : Retour refusé — fenêtre dépassée\n\nBonjour,\n\nJ'ai voulu retourner une paire d'enceintes achetée il y a 45 jours, mais le site refuse ma demande car le délai de 30 jours est dépassé. J'étais hospitalisé pendant six semaines, certificat médical à l'appui, et je n'ai matériellement pas pu effectuer le retour à temps. Les enceintes sont neuves, jamais déballées. J'espère qu'une exception est possible au vu des circonstances.\n\nRespectueusement,\nM. Traoré",
-      "question": "Sur quoi le client fonde-t-il sa demande d'exception ?",
-      "options": [
-        "Sur un défaut de fabrication des enceintes.",
-        "Sur une promesse écrite d'un précédent conseiller.",
-        "Sur une impossibilité médicale justifiée de respecter le délai, produit non déballé.",
-        "Sur le fait que le délai légal de rétractation est de 60 jours."
-      ],
-      "correct": 2
     }
   ],
   "oral": [
     {
       "id": "o01",
-      "audio": "audio/oral_01.mp3",
-      "transcript": "Bonjour… oui, bonjour. Écoutez, je suis vraiment agacée. Ça fait trois fois que j'essaie de me connecter à mon compte et à chaque fois on me dit « activité inhabituelle détectée » et on me déconnecte. J'ai changé mon mot de passe deux fois, j'ai validé le code reçu par SMS, et rien n'y fait. J'ai des commandes à passer pour mon commerce, je perds de l'argent, là. Qu'est-ce que vous comptez faire, concrètement ?",
-      "instruction": "La cliente est bloquée hors de son compte malgré plusieurs vérifications. Répondez oralement (max 60 s) : montrez de l'empathie, expliquez la cause probable, annoncez les étapes concrètes de déblocage."
+      "audio": "audio/audio_1.weba",
+      "transcript": "Situation : un démarcheur téléphonique (Fahim, Performindex) insiste lourdement pour parler à Mme Branchu malgré tous les filtres. Vous êtes conseiller Amazon Business et un vendeur tiers appelle de la même manière pour joindre à tout prix un acheteur professionnel, sans avoir de sujet précis ni de rendez-vous.",
+      "instruction": "Répondez oralement (max 60 s) au vendeur : cadrez fermement mais courtoisement le canal de contact (formulaire pro / messagerie Seller Central), refusez le transfert direct, expliquez pourquoi et proposez la marche à suivre."
     },
     {
       "id": "o02",
-      "audio": "audio/oral_02.mp3",
-      "transcript": "Oui bonjour, alors voilà, j'ai commandé un ordinateur portable à 899 euros, livraison prévue hier, garantie avant Noël, c'était écrit noir sur blanc. Et là je vois que le colis est « retardé, nouvelle date inconnue ». Inconnue ! C'est le cadeau principal de mon fils. Soit vous me garantissez une livraison avant le 24, soit j'annule et je l'achète en magasin — mais dans ce cas je veux un geste, parce que franchement, c'est pas sérieux.",
-      "instruction": "Le client menace d'annuler à cause d'un retard de livraison avant Noël. Répondez oralement (max 60 s) : présentez des excuses, vérifiez les options réalistes, proposez une solution et, si pertinent, un geste commercial."
+      "audio": "audio/audio_2.weba",
+      "transcript": "Situation : un commercial obtient un rendez-vous après avoir démontré des économies chiffrées (20–30 %). Transposition : un vendeur tiers vous appelle, il envisage de passer au programme Amazon FBA (Expédié par Amazon) mais hésite sur le coût comparé à sa logistique actuelle.",
+      "instruction": "Répondez oralement (max 60 s) en conseiller Amazon : reformulez son besoin, annoncez que vous pouvez lui envoyer un comparatif chiffré personnalisé, indiquez les données nécessaires (volumes, poids moyen, taux de retour) et proposez un rendez-vous de suivi."
     },
     {
       "id": "o03",
-      "audio": "audio/oral_03.mp3",
-      "transcript": "Bonjour. Je vous appelle parce que j'ai reçu un réfrigérateur ce matin, et les livreurs ont abîmé mon parquet en le transportant — il y a des rayures profondes sur deux mètres. Ils ont refusé de faire un constat et sont repartis. J'ai des photos, et le voisin a tout vu. Le frigo, lui, fonctionne, ce n'est pas la question. Ce que je veux savoir, c'est comment Amazon compte m'indemniser pour les dégâts.",
-      "instruction": "Un client demande une indemnisation pour des dégâts causés par les livreurs à son domicile. Répondez oralement (max 60 s) : cadrez la procédure de réclamation dommages, listez les pièces à fournir, donnez un délai de traitement."
+      "audio": "audio/audio_3.weba",
+      "transcript": "Situation : un client agressif, tutoiement, insultes, propos discriminatoires envers la conseillère. Il refuse l'authentification et exige des informations sensibles. Transposition Amazon : le même profil de client réclame l'accès à sa commande sans passer par la vérification de sécurité.",
+      "instruction": "Répondez oralement (max 60 s) en conseiller Amazon : posez un cadre professionnel ferme, rappelez que les propos injurieux ne sont pas tolérés, expliquez pourquoi l'authentification est non négociable, et proposez la voie de sortie (authentification allégée limitée)."
     },
     {
       "id": "o04",
-      "audio": "audio/oral_04.mp3",
-      "transcript": "Allô, bonjour. Voilà, c'est un peu délicat… Mon mari est décédé le mois dernier, et son compte Amazon continue de prélever des abonnements — Prime, et je crois deux abonnements « Économisez en vous abonnant ». Je n'ai pas ses identifiants et je ne sais pas par où commencer. On me demande des documents à chaque fois et on me renvoie de service en service. Vous pouvez m'aider, s'il vous plaît ?",
-      "instruction": "Situation sensible : clôture du compte d'une personne décédée et arrêt des prélèvements. Répondez oralement (max 60 s) : ton adapté, condoléances sobres, documents nécessaires, étapes et engagement de suivi personnalisé."
-    },
-    {
-      "id": "o05",
-      "audio": "audio/oral_05.mp3",
-      "transcript": "Bonjour, je suis vendeur professionnel sur votre marketplace depuis quatre ans. Un client a laissé un commentaire d'une étoile affirmant que mon produit est une contrefaçon, ce qui est faux et diffamatoire — j'ai les factures du fabricant. Ce commentaire a fait chuter mes ventes de trente pour cent en une semaine. Je demande sa suppression immédiate. On m'a déjà répondu deux fois avec des messages automatiques, alors cette fois j'aimerais une vraie réponse.",
-      "instruction": "Un vendeur tiers conteste un avis client qu'il juge diffamatoire. Répondez oralement (max 60 s) : expliquez la politique d'avis, les critères de suppression, la procédure d'escalade et les preuves à joindre — sans rien promettre d'indu."
-    },
-    {
-      "id": "o06",
-      "audio": "audio/oral_06.mp3",
-      "transcript": "Oui, bonjour. Alors moi j'ai un problème avec la consigne, là, le Locker près de la gare. J'ai scanné le code-barres, la porte s'est ouverte, mais le casier était vide ! Vide ! Et l'application me dit « colis retiré ». Donc pour vous, j'ai mon colis, et pour moi, je n'ai rien du tout. C'était des médicaments pour mon traitement, en plus. Il me les faut avant lundi.",
-      "instruction": "Colis marqué retiré mais casier vide, produit urgent (parapharmacie). Répondez oralement (max 60 s) : rassurez, expliquez l'enquête consigne, proposez renvoi express ou remboursement, tenez compte de l'urgence."
+      "audio": "audio/audio_4.weba",
+      "transcript": "Situation : erreur logistique — le client a reçu une ancienne commande à la place de la nouvelle, et son propre client final s'est déplacé pour rien. La conseillère propose une livraison exceptionnelle directe. Transposition : un vendeur tiers Amazon vous appelle, un colis important pour son propre client final a été mal expédié par la logistique Amazon.",
+      "instruction": "Répondez oralement (max 60 s) : excusez-vous concrètement, résumez ce que vous avez compris pour vérification, proposez une solution de livraison express directe au client final et indiquez le délai."
     }
   ],
   "writing": [
