@@ -135,10 +135,13 @@ async function callGrade(kind, messages, jsonMode = true) {
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
   const txt = data.content || "";
-  if (!jsonMode) return txt;
-  const clean = txt.replace(/```json|```/g, "").trim();
-  const m = clean.match(/\{[\s\S]*\}/);
-  return JSON.parse(m ? m[0] : clean);
+if (!jsonMode) return txt;
+let clean = txt.replace(/```json|```/g, "").trim();
+const start = clean.indexOf("{");
+const end = clean.lastIndexOf("}");
+if (start >= 0 && end > start) clean = clean.slice(start, end + 1);
+try { return JSON.parse(clean); }
+catch(e) { throw new Error("Réponse IA malformée: " + clean.slice(0, 200));
 }
 
 /* ---------------- grading prompts ---------------- */
