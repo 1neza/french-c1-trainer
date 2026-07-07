@@ -131,20 +131,18 @@ async function callGrade(kind, messages, jsonMode = true) {
       "apikey": window.C1_CONFIG.SUPABASE_ANON_KEY,
     },
     body: JSON.stringify({ kind, messages, jsonMode }),
-  });} 
-  
+  });
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
   const txt = data.content || "";
-if (!jsonMode) return txt;
-let clean = txt.replace(/```json|```/g, "").trim();
-const start = clean.indexOf("{");
-const end = clean.lastIndexOf("}");
-if (start >= 0 && end > start) clean = clean.slice(start, end + 1);
-try { return JSON.parse(clean); }
-catch(e) { throw new Error("Réponse IA malformée: " + clean.slice(0, 200));
+  if (!jsonMode) return txt;
+  let clean = txt.replace(/```json|```/g, "").trim();
+  const start = clean.indexOf("{");
+  const end = clean.lastIndexOf("}");
+  if (start >= 0 && end > start) clean = clean.slice(start, end + 1);
+  try { return JSON.parse(clean); }
+  catch(e) { throw new Error("Réponse IA malformée: " + clean.slice(0, 200)); }
 }
-
 /* ---------------- grading prompts ---------------- */
 
 const RUBRIC = `Tu es un examinateur DALF C1 SÉVÈRE spécialisé dans l'évaluation du français professionnel.
