@@ -74,7 +74,7 @@ Deno.serve(async (req) => {
     body: JSON.stringify({
       model,
       messages,
-      max_tokens: 2000,
+      max_tokens: 6000,
       ...(jsonMode ? { response_format: { type: "json_object" } } : {}),
     }),
   });

@@ -145,51 +145,29 @@ async function callGrade(kind, messages, jsonMode = true) {
 }
 /* ---------------- grading prompts ---------------- */
 
-const RUBRIC = `Tu es un examinateur DALF C1 SÉVÈRE spécialisé dans l'évaluation du français professionnel.
+const RUBRIC = `Tu es un examinateur DALF C1 spécialisé en français professionnel.
 
-ÉVALUE LA PRODUCTION DU CANDIDAT SUR 10 POINTS.
-
-BARÈME STRICT :
-
-0/10 : silence, vide, "test", "a", mots isolés, charabia, hors sujet total, communication impossible.
-1/10 : quelques mots, impossible d'évaluer un niveau réel.
-2/10 : très court/très pauvre, erreurs empêchant la compréhension, <A2.
-3/10 : A2 — phrases simples, vocabulaire très limité, nombreuses fautes.
-4/10 : B1 faible — compréhensible mais imprécis, erreurs fréquentes, vocabulaire courant.
-5/10 : B2 — correct, structure acceptable, manque richesse/nuance, registre parfois inadéquat.
-6/10 : B2 avancé — bonne maîtrise, peu d'erreurs, manque encore précision/spontanéité C1.
-7/10 : C1 atteint — clair, structuré, professionnel, vocabulaire précis, très peu d'erreurs.
-8/10 : très bon C1 — fluide, naturel, lexique varié, erreurs rares.
-9/10 : excellent C1 — précision grammaticale/lexicale, argumentation solide, registre parfait.
-10/10 : proche natif professionnel, irréprochable.
+ÉVALUE LA PRODUCTION SUR 10, en déduisant le niveau CECRL réel observé :
+0 : aucune production exploitable ou hors sujet total.
+1-2 : <A2, communication impossible ou presque.
+3 : A2. 4 : B1. 5-6 : B2. 7 : C1 atteint. 8 : très bon C1. 9 : excellent C1. 10 : quasi natif.
 
 CRITÈRES :
-1. Correction grammaticale (accords, conjugaison, syntaxe).
+1. Grammaire (accords, conjugaison, syntaxe).
 2. Vocabulaire (richesse, précision, lexique professionnel).
 3. Fluidité et naturel.
 4. Structure et cohérence.
-5. Registre adapté (éviter familier en contexte professionnel).
-6. Adaptation à la situation (résoudre la tâche demandée).
+5. Registre adapté au contexte professionnel.
+6. Adaptation à la situation : la réponse doit réellement traiter le problème posé (empathie, solution, étapes).
 
-RÈGLES ABSOLUES :
-- Silence/vide/"test"/charabia/hors sujet = 0 obligatoire.
-- <10 mots = maximum 2/10.
-- Audio <15 secondes = maximum 2/10.
-- Sans solution métier concrète = maximum 4/10.
-- Registre familier en contexte pro = pénalité forte.
-- Tutoiement injustifié envers client = -3.
-- Anglicismes inutiles, langage SMS = pénalité.
-- Ne jamais donner 7+ par gentillesse.
-- Notes 8-10 doivent rester rares.
-- La majorité des candidats doivent se situer entre 4 et 6.
-- Sois BRUTAL, objectif, comparable à un examinateur officiel.
+ÉVALUATION CONTEXTUELLE :
+- Juge d'abord la pertinence par rapport à la situation, puis la qualité linguistique.
+- Le score reflète exactement le niveau observé — ni indulgence, ni sévérité artificielle.
+- Une réponse courte mais parfaitement adaptée peut être bien notée ; une réponse longue mais pauvre ou hors sujet non.
 
-Une réponse courte mais parfaitement formulée peut obtenir une bonne note.
-Une réponse longue avec erreurs/pauvre ne doit PAS obtenir une note élevée.
+Le feedback (3-4 phrases en français) inclut : niveau CECRL estimé, 1-2 corrections précises, 1 conseil concret.
 
-Le feedback (3-4 phrases en français) doit inclure : niveau CECRL estimé, 1-2 corrections précises, 1 conseil concret.
-
-RÉPONDS UNIQUEMENT EN JSON STRICT selon le format demandé dans la consigne.`; 
+RÉPONDS UNIQUEMENT EN JSON STRICT selon le format demandé dans la consigne.`;
 
 async function gradeWriting(items) {
   const payload = items.map((it, i) =>
