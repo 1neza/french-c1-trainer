@@ -649,3 +649,4 @@ Bonne réponse : ${esc(d.options[d.correct])}`}</div>`).join("")}
   const user = await getSessionUser();
   if (user) afterLogin(); else renderAuth();
 })();
+}
