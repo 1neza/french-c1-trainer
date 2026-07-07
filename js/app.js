@@ -131,7 +131,8 @@ async function callGrade(kind, messages, jsonMode = true) {
       "apikey": window.C1_CONFIG.SUPABASE_ANON_KEY,
     },
     body: JSON.stringify({ kind, messages, jsonMode }),
-  });
+  });} 
+  
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
   const txt = data.content || "";
@@ -649,5 +650,3 @@ Bonne réponse : ${esc(d.options[d.correct])}`}</div>`).join("")}
   const user = await getSessionUser();
   if (user) afterLogin(); else renderAuth();
 })();
-<<<<<<< Updated upstream
-}
