@@ -48,6 +48,12 @@ Deno.serve(async (req) => {
     return json({ error: "daily limit reached, retry tomorrow" }, 429);
   }
 
+  const { count: sess } = await admin
+    .from("exam_sessions")
+    .select("*", { count: "exact", head: true })
+    .eq("user_id", user.id);
+  if ((sess ?? 0) > 3) return json({ error: "limite de 3 examens atteinte" }, 403);
+
   // --- payload ---
   let body: { kind?: string; messages?: unknown; jsonMode?: boolean };
   try {

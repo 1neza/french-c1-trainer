@@ -281,7 +281,15 @@ function renderIntro() {
   };
 }
 
-function startSession() {
+async function startSession() {
+  const { count } = await sb.from("exam_sessions")
+    .select("*", { count: "exact", head: true });
+  if ((count ?? 0) >= 3) {
+    $app.innerHTML = ticket("Accès", "Limite atteinte", "", `
+      <div class="notice err">Vous avez déjà utilisé vos 3 tentatives d'examen.</div>`);
+    return;
+  }
+  await sb.from("exam_sessions").insert({ user_id: (await getSessionUser()).id });
   session = {
     comprehension: pick(bank.comprehension, COUNTS.comprehension),
     oral: pick(bank.oral, COUNTS.oral),
